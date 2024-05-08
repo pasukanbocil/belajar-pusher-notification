@@ -14,16 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/userRegistration', function () {
-    return view('userRegistration');
-});
+// Route::get('/userRegistration', function () {
+//     return view('userRegistration');
+// });
 
-Route::post('/userRegistration', function () {
-    $name = request()->name;
-    event(new UserRegistration($name));
-    
-});
+// Route::post('/userRegistration', function () {
+//     $name = request()->name;
+//     event(new UserRegistration($name));
+
+// });
