@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('userRegistration');
 // });
 
-// Route::post('/userRegistration', function () {
-//     $name = request()->name;
-//     event(new UserRegistration($name));
+Route::post('/userRegistration', function () {
+    $name = request()->name;
+    event(new UserRegistration($name));
 
-// });
+});
