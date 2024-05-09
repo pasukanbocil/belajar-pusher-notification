@@ -22,8 +22,8 @@ Route::get('/userRegistration', function () {
     return view('userRegistration');
 });
 
-// Route::post('/userRegistration', function () {
-//     $name = request()->name;
-//     event(new UserRegistration($name));
+Route::post('/userRegistration', function () {
+    $name = request()->name;
+    event(new UserRegistration($name));
 
-// });
+});
